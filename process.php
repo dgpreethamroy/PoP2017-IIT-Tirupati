@@ -17,6 +17,7 @@ $row = mysqli_fetch_array($result);
 if($row['username']==$username && $row['password']== $password){
 	
 	echo "login suceess welcome".$row['username'];
+	"<script> window.location.assign('p4.html'); </script>";
 }else{
 	echo "failed to login";
 }
